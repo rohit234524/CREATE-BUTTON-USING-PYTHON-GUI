@@ -1,0 +1,35 @@
+from tkinter import *
+root = Tk()
+
+root.geometry("500x350")
+root.title("developed by rohit")
+frame = Frame(root,borderwidth=6, bg="grey", relief=SUNKEN)
+frame.pack(side=LEFT,anchor="nw")
+
+def hello():
+    print("hello rohit yadav")
+
+def name():
+    print("print in gui bottom")
+
+def gui():
+    print("name with rohit")
+
+def py():
+    print("name with suraj")
+
+
+b1 = Button(frame, fg="red", text="Print Now",command=hello)
+b1.pack(side=LEFT, padx=20)
+
+b2 = Button(frame, fg="red", text="Click me",command=name)
+b2.pack(side=LEFT, padx=20)
+
+b3 = Button(frame, fg="red", text="Print Now",command=py)
+b3.pack(side=LEFT, padx=20)
+
+b4 = Button(frame, fg="red", text="Click me",command=gui)
+b4.pack(side=LEFT, padx=20)
+
+root.mainloop()
+
